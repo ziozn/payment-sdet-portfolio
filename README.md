@@ -11,7 +11,7 @@
 - [Allure 报告截图与执行来源](docs/allure-report.md)
 - [JMeter 脚本、指标与实验限制](docs/performance-report.md)
 
-四个入口均为仓库内实际文件。本地发布仓库尚未连接远程，GitHub URL 在获得明确发布授权后产生。
+四个入口均为仓库内实际文件，公开仓库地址为 [ziozn/payment-sdet-portfolio](https://github.com/ziozn/payment-sdet-portfolio)。报告保留真实执行日期；Jenkins新配置的未验证状态见对应文档。
 
 ## 实现与代码导航
 
