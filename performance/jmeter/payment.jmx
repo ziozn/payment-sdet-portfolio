@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="模拟支付小规模一致性验证">
+      <stringProp name="TestPlan.comments">仅本机模拟支付；CSV 每次使用一个已实名绑卡用户。mode=unique/replay/conflict。有限循环；线程集合只协调请求起点，不证明数据库事务同时写入。</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables"><collectionProp name="Arguments.arguments"/></elementProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="本机 HTTP 默认参数">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments"><collectionProp name="Arguments.arguments"/></elementProp>
+        <stringProp name="HTTPSampler.domain">${__P(host,127.0.0.1)}</stringProp>
+        <stringProp name="HTTPSampler.port">${__P(port,18711)}</stringProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout">2000</stringProp>
+        <stringProp name="HTTPSampler.response_timeout">10000</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="本场景单个已实名绑卡 DEMO 用户">
+        <stringProp name="filename">${__P(data_file)}</stringProp>
+        <stringProp name="fileEncoding">UTF-8</stringProp>
+        <stringProp name="variableNames"></stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="隔离空间、幂等标识与 JSON">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header"><stringProp name="Header.name">X-Test-Run-ID</stringProp><stringProp name="Header.value">${namespace}</stringProp></elementProp>
+          <elementProp name="" elementType="Header"><stringProp name="Header.name">Idempotency-Key</stringProp><stringProp name="Header.value">${payment_key}</stringProp></elementProp>
+          <elementProp name="" elementType="Header"><stringProp name="Header.name">Content-Type</stringProp><stringProp name="Header.value">application/json</stringProp></elementProp>
+          <elementProp name="" elementType="Header"><stringProp name="Header.name">Accept</stringProp><stringProp name="Header.value">application/json</stringProp></elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Payment threads">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${__P(loops,2)}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(threads,1)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(ramp_up,1)}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="每轮协调线程起点（不代表数据库并行写入）">
+          <stringProp name="groupSize">${__P(threads,1)}</stringProp>
+          <longProp name="timeoutInMs">10000</longProp>
+        </SyncTimer>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /payments">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{"user_id":"${user_id}","card_id":"${card_id}","amount_cent":${__P(amount_cent,1250)}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.path">/payments</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="按模式生成每个线程自己的幂等标识">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script"><![CDATA[
+vars.put('payment_id', '')
+def mode = props.getProperty('mode', 'unique')
+if (mode == 'unique') {
+    vars.put('payment_key', 'DEMO_UNIQUE_' + (ctx.getThreadNum() + 1) + '_' + vars.getIteration())
+} else if (mode in ['replay', 'conflict']) {
+    vars.put('payment_key', props.getProperty('idempotency_key', 'DEMO_SHARED'))
+} else {
+    throw new IllegalArgumentException('Unknown payment mode: ' + mode)
+}
+]]></stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="精确校验预期状态码（含业务预期 409）">
+            <collectionProp name="Asserion.test_strings"><stringProp name="expected_code">${__P(expected_code,201)}</stringProp></collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="校验支付业务字段或幂等冲突原因">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script"><![CDATA[
+try {
+    def actual = new groovy.json.JsonSlurper().parseText(prev.getResponseDataAsString())
+    if (props.getProperty('mode', 'unique') == 'conflict') {
+        def expected = [detail: 'Idempotency key conflicts with payment parameters']
+        if (actual != expected) {
+            throw new IllegalStateException('Unexpected conflict response: ' + actual)
+        }
+    } else {
+        def expectedKeys = ['payment_id', 'user_id', 'card_id', 'amount_cent', 'status'] as Set
+        if (!(actual instanceof Map) || actual.keySet() != expectedKeys ||
+            !(actual.payment_id instanceof String) || actual.payment_id.isEmpty() ||
+            actual.user_id != vars.get('user_id') || actual.card_id != vars.get('card_id') ||
+            actual.amount_cent != props.getProperty('amount_cent', '1250').toInteger() ||
+            actual.status != 'SUCCEEDED') {
+            throw new IllegalStateException('Payment JSON mismatch: ' + actual)
+        }
+        def expectedPaymentId = props.getProperty('expected_payment_id', '')
+        if (expectedPaymentId && actual.payment_id != expectedPaymentId) {
+            throw new IllegalStateException('Replay returned another payment_id: ' + actual.payment_id)
+        }
+        vars.put('payment_id', actual.payment_id)
+    }
+} catch (Exception error) {
+    AssertionResult.setFailure(true)
+    AssertionResult.setFailureMessage(error.toString())
+}
+]]></stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

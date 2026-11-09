@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">模拟支付测试</string>
+    <string name="home_title">模拟支付测试</string>
+    <string name="demo_user_section">虚构用户</string>
+    <string name="demo_user_name">用户：DEMO_PERSON_01</string>
+    <string name="demo_user_card">状态：已模拟实名；演示卡：DEMO_CARD_001</string>
+    <string name="ui_demo_notice">当前为 UI 演示模式。按钮只校验输入，不调用后台接口，也不会创建支付。</string>
+    <string name="open_payment">进入模拟支付</string>
+    <string name="payment_title">模拟支付</string>
+    <string name="amount_rules">金额单位：元。请输入 0.01–10000.00，最多两位小数。</string>
+    <string name="amount_hint">例如 12.50</string>
+    <string name="submit_payment">发起模拟支付</string>
+    <string name="payment_result_title">操作结果</string>
+    <string name="payment_amount_not_available">金额：—</string>
+    <string name="payment_not_started">尚未发起操作</string>
+    <string name="payment_invalid_amount">金额无效，请输入 0.01–10000.00 元且最多两位小数。</string>
+    <string name="payment_amount_result">金额：%1$s 元</string>
+    <string name="payment_ui_demo_status">UI 演示模式：已校验金额 %1$s 元；未调用后台 API，未产生支付。</string>
+    <string name="transaction_id_not_created">交易 ID：未生成（后台未执行）</string>
+    <string name="back_home">返回首页</string>
+</resources>

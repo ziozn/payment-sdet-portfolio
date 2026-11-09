@@ -1,0 +1,43 @@
+[
+  {
+    "build": 7,
+    "mode": "API_ONLY",
+    "execution_date": "2026-10-31",
+    "historical": true,
+    "suites": {
+      "api": {
+        "total": 82,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "source_sha256": "34af345d04d7458f2a3d479ee600c2c9d4f8be03f56ce7b4c160f8479a4bc186"
+      }
+    },
+    "pipeline_result": "SUCCESS",
+    "console_sha256": "6669c4ec6e92d29625350f18adaa1a02a06d688dcb7d6276d067efb0874c7e25"
+  },
+  {
+    "build": 8,
+    "mode": "FULL",
+    "execution_date": "2026-10-31",
+    "historical": true,
+    "suites": {
+      "api": {
+        "total": 82,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "source_sha256": "c86064e0ea967860d2fd142217f1c6445c3bf44787601dd3f01669c06af470f8"
+      },
+      "ui": {
+        "total": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "source_sha256": "6e9c72d2cbd30ed4060a4ddc666579a0db368bda536cd0e34921dff921300f45"
+      }
+    },
+    "pipeline_result": "SUCCESS",
+    "console_sha256": "ee035ee1be3c4f91f5610bb656e193333302211a2d519fb0ebf0fc6778d4585e"
+  }
+]

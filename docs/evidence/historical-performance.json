@@ -1,0 +1,277 @@
+[
+  {
+    "experiment": "health-baseline-t1-01",
+    "date": "2026-10-29",
+    "source_sha256": "b1e3523c94c551a6d7ca58fb809706b208c4a748961055d4dd773fac4b07681f",
+    "total": {
+      "count": 58166,
+      "passed": 58166,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.938,
+      "rps": 1664.8348503062566,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 18,
+        "mean": 0.5401953030980298,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "response_code_counts": {
+        "200": 58166
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "health-load-t5-01",
+    "date": "2026-10-29",
+    "source_sha256": "9edafaf6419a4c9495bbab8c2a6402647102eba61c9c9ccc88ec70346f691afe",
+    "total": {
+      "count": 105080,
+      "passed": 105080,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.947,
+      "rps": 3006.8389275188138,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 21,
+        "mean": 1.5582127902550438,
+        "p90": 2,
+        "p95": 2,
+        "p99": 3
+      },
+      "response_code_counts": {
+        "200": 105080
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "health-load-t10-01",
+    "date": "2026-10-29",
+    "source_sha256": "343bb3e326fdf809fc135a13b0b94bf01a88b2ad758c5ab234331ae7d0e39907",
+    "total": {
+      "count": 110471,
+      "passed": 110471,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.953,
+      "rps": 3160.5584642233853,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 109,
+        "mean": 2.912936426754533,
+        "p90": 4,
+        "p95": 4,
+        "p99": 5
+      },
+      "response_code_counts": {
+        "200": 110471
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "health-load-t20-01",
+    "date": "2026-10-29",
+    "source_sha256": "06b58ebeea6518c64ad2b50092a1da1d8d7191c5e85cec5f1fa112f1436a2d74",
+    "total": {
+      "count": 121800,
+      "passed": 121800,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.956,
+      "rps": 3484.3803638860277,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 50,
+        "mean": 5.307733990147783,
+        "p90": 7,
+        "p95": 7,
+        "p99": 8
+      },
+      "response_code_counts": {
+        "200": 121800
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "user-query-baseline-t1-01",
+    "date": "2026-10-29",
+    "source_sha256": "5045b8d03f14a3683f7ca9e741faf78602cc39b99faa69db6fb2bc71677588e3",
+    "total": {
+      "count": 42842,
+      "passed": 42842,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.938,
+      "rps": 1226.2293205106187,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 53,
+        "mean": 0.716539844078241,
+        "p90": 1,
+        "p95": 1,
+        "p99": 1
+      },
+      "response_code_counts": {
+        "200": 42842
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "user-query-load-t5-01",
+    "date": "2026-10-29",
+    "source_sha256": "5a49445d400f4ab1c3294a23dc169346d30885201dbc4c346e07fb772fbdc1d2",
+    "total": {
+      "count": 67392,
+      "passed": 67392,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.944,
+      "rps": 1928.5714285714284,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 99,
+        "mean": 2.4111467236467234,
+        "p90": 3,
+        "p95": 3,
+        "p99": 4
+      },
+      "response_code_counts": {
+        "200": 67392
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "user-query-load-t10-01",
+    "date": "2026-10-29",
+    "source_sha256": "9c8019bf9f34fe4d88762bf25c4aa7af7bf8429c3e3da3ec69efbb5f1bbe6f6e",
+    "total": {
+      "count": 67152,
+      "passed": 67152,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.945,
+      "rps": 1921.6483044784661,
+      "elapsed_ms": {
+        "min": 0,
+        "max": 23,
+        "mean": 4.7815403859899925,
+        "p90": 6,
+        "p95": 7,
+        "p99": 8
+      },
+      "response_code_counts": {
+        "200": 67152
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "user-query-load-t20-01",
+    "date": "2026-10-29",
+    "source_sha256": "010a40f06271d24ad941aaa6a7c004f6b0484f55ef8862dc40701234be88ec54",
+    "total": {
+      "count": 66520,
+      "passed": 66520,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 34.951,
+      "rps": 1903.235958913908,
+      "elapsed_ms": {
+        "min": 1,
+        "max": 91,
+        "mean": 9.709546001202646,
+        "p90": 13,
+        "p95": 14,
+        "p99": 17
+      },
+      "response_code_counts": {
+        "200": 66520
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "payment-unique-t5-01",
+    "date": "2026-10-29",
+    "source_sha256": "12844b37a2fd71cabdc4da2fff015cddf88154c8f9bf0b99ef09015e7db2d33e",
+    "total": {
+      "count": 50,
+      "passed": 50,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 0.304,
+      "rps": 164.47368421052633,
+      "elapsed_ms": {
+        "min": 2,
+        "max": 32,
+        "mean": 11.46,
+        "p90": 25,
+        "p95": 26,
+        "p99": 32
+      },
+      "response_code_counts": {
+        "201": 50
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "payment-replay-t5-01",
+    "date": "2026-10-29",
+    "source_sha256": "de7e1d554ede89a1fe6a22d5791335ad613847fe199223e69d75f061f5116fe2",
+    "total": {
+      "count": 20,
+      "passed": 20,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 0.183,
+      "rps": 109.2896174863388,
+      "elapsed_ms": {
+        "min": 2,
+        "max": 42,
+        "mean": 14.7,
+        "p90": 25,
+        "p95": 31,
+        "p99": 42
+      },
+      "response_code_counts": {
+        "201": 20
+      },
+      "expected_409_count": 0
+    }
+  },
+  {
+    "experiment": "payment-conflict-t5-01",
+    "date": "2026-10-29",
+    "source_sha256": "a290555a804a9f7121304590ff3abce3b0af7b183bb6705be8112cfc36b7cfd0",
+    "total": {
+      "count": 10,
+      "passed": 10,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 0.128,
+      "rps": 78.125,
+      "elapsed_ms": {
+        "min": 6,
+        "max": 24,
+        "mean": 17.1,
+        "p90": 24,
+        "p95": 24,
+        "p99": 24
+      },
+      "response_code_counts": {
+        "409": 10
+      },
+      "expected_409_count": 10
+    }
+  }
+]

@@ -1,0 +1,356 @@
+{
+  "scope": "Only these files, plus this manifest, form the independent public release",
+  "self_hash_excluded": true,
+  "total_files": 87,
+  "files": {
+    ".gitignore": {
+      "bytes": 372,
+      "sha256": "6b6a09bc1258313703a7638f877d1ae9e2553c839e319c0ed603c2905cf80019"
+    },
+    "Jenkinsfile": {
+      "bytes": 2728,
+      "sha256": "c568992fedbd66b06c69b4d45a6753297f0a711c84c7ec8aadcb005edac8a064"
+    },
+    "LICENSE": {
+      "bytes": 1062,
+      "sha256": "ce5a2aedcbaf93d5199167a4838ee9311b9d87408e7dad526b90b7a6101fd573"
+    },
+    "README.md": {
+      "bytes": 5581,
+      "sha256": "ef7a18203546b6ad175567a1c1bef81284e735bbde052a7b9071f862bdb8f646"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 3489,
+      "sha256": "1d10c591990be433fb44fa11a4374c32393d50362136d219ca9af9ec8feea7bc"
+    },
+    "android-app/.gitignore": {
+      "bytes": 92,
+      "sha256": "9fd5602b3bb49a5c9bcc2cb64c810a89f794f2bb4b3558ac5e053750eac902a4"
+    },
+    "android-app/app/build.gradle.kts": {
+      "bytes": 673,
+      "sha256": "6c3c6c05c6e02e563d4ce61695fa444f7b113a0e82d01ac13c73ce22fbd2f43f"
+    },
+    "android-app/app/src/main/AndroidManifest.xml": {
+      "bytes": 732,
+      "sha256": "4ea4d0e96cf78ad94e315420683f6efc9bd903b4d0e0d5a7d55dc5e7157b797a"
+    },
+    "android-app/app/src/main/java/com/example/paymentsim/MainActivity.kt": {
+      "bytes": 488,
+      "sha256": "5d6839a6776ca386488a70b93c79b42a0d3e68145b088ec98fa0f5602a2cfb46"
+    },
+    "android-app/app/src/main/java/com/example/paymentsim/PaymentActivity.kt": {
+      "bytes": 2203,
+      "sha256": "f4b9646d2f2e743f71d512460aec27526bdc94d6273777f22bb70ff4fb55a2ab"
+    },
+    "android-app/app/src/main/res/layout/activity_main.xml": {
+      "bytes": 2845,
+      "sha256": "64737efe8d5614278cabd706312340e3df1f4f54ff08592d064014082808cbc8"
+    },
+    "android-app/app/src/main/res/layout/activity_payment.xml": {
+      "bytes": 4004,
+      "sha256": "78fa07fcf082d39f947d9ef0642e46eca7c854c1c4fd0a2317996044bb6f32b9"
+    },
+    "android-app/app/src/main/res/values/strings.xml": {
+      "bytes": 1559,
+      "sha256": "4c1421644671ae9b78dfe88ba530b4719b3b9fe64968a22bbaf0a521d8c66ee8"
+    },
+    "android-app/app/src/main/res/values/styles.xml": {
+      "bytes": 453,
+      "sha256": "3627be2ca478b3de327c69fb617af20b35e0759d9eeab6a5c009dfded10cbc69"
+    },
+    "android-app/build.gradle.kts": {
+      "bytes": 143,
+      "sha256": "baf78b5b63d78730e2839ced750db4c6fc1739c144231cfbc7c850c74e441834"
+    },
+    "android-app/gradle.properties": {
+      "bytes": 103,
+      "sha256": "fa078c27c9e4bde28a029d673875b028884505efa436b68cf60e1ac0be5b679b"
+    },
+    "android-app/gradle/GRADLE-LICENSE": {
+      "bytes": 23622,
+      "sha256": "9536d88ea948603d18e232a13f5958d67807cd80828036b082bff171d2cf0703"
+    },
+    "android-app/gradle/wrapper/gradle-wrapper.jar": {
+      "bytes": 43705,
+      "sha256": "81a82aaea5abcc8ff68b3dfcb58b3c3c429378efd98e7433460610fecd7ae45f"
+    },
+    "android-app/gradle/wrapper/gradle-wrapper.properties": {
+      "bytes": 338,
+      "sha256": "771795cf9eded83bfe7d538887684504469545246afa414b08c25b38fd6afcf8"
+    },
+    "android-app/gradlew": {
+      "bytes": 8774,
+      "sha256": "c76f16038b4e70b84ed0b3b9e08e82a8ecaf66ec0efdfdecdece92520fa3cecb"
+    },
+    "android-app/gradlew.bat": {
+      "bytes": 2894,
+      "sha256": "0f3ed8f03b50934cb8c48b15a470d5c20a30a5385825e48b55bcc8ea3d8f8e18"
+    },
+    "android-app/settings.gradle.kts": {
+      "bytes": 331,
+      "sha256": "70914d9fe2a8663db82e1f13104a4d0842d44435d9398d15275e353ac508080b"
+    },
+    "ci/README.md": {
+      "bytes": 296,
+      "sha256": "d34eac56d94c0df44be44c2b746d36c00cec2100dcb80e41104b81cfa06b2089"
+    },
+    "ci/plugins.txt": {
+      "bytes": 114,
+      "sha256": "de76d0387c0b01d16cf0ad6798d7a00e707fca943c65a973faa3c09a2ea117b4"
+    },
+    "docs/allure-report.md": {
+      "bytes": 1881,
+      "sha256": "48ec6ebae7101773f743a847afd4022436df07ed9f7202ed01ef444ebcaa46c4"
+    },
+    "docs/android.md": {
+      "bytes": 3205,
+      "sha256": "60d2b4e7622ab3b0a146638d0eefb676a364e21c79a2c72dc5fdba8e4f28f3b1"
+    },
+    "docs/architecture.md": {
+      "bytes": 2012,
+      "sha256": "a099155b429bddd002d2a158063cf0ff4f97ed490e0e07dc388c32e33b79324e"
+    },
+    "docs/assets/allure-overview.jpg": {
+      "bytes": 33924,
+      "sha256": "d46b2fa22e793c7f2309117e9738a90c050d27f1485026824d33238284a79af8"
+    },
+    "docs/assets/android-demo.png": {
+      "bytes": 119690,
+      "sha256": "9a670bcaafe5f53c7fb840f253475053086acdfd9d718f290fa3334568f67983"
+    },
+    "docs/ci-demo.md": {
+      "bytes": 3683,
+      "sha256": "76342d086ba116cd5451fd42eecabdd52c3ea312eac63bee28d912e170067996"
+    },
+    "docs/current-contract.md": {
+      "bytes": 1613,
+      "sha256": "a5ec26bac152057f72fda442e1b4290b43a1e1a92cb9d7bf5eb481813ccd4c13"
+    },
+    "docs/demo-guide.md": {
+      "bytes": 756,
+      "sha256": "639e90fb52529d11a139f1c538faacad746f9091b4ab569ab5890d744cb1d208"
+    },
+    "docs/evidence/allure-summary.json": {
+      "bytes": 724,
+      "sha256": "a0a4701935a6c2d4aed31b4b430b124f9b41420432d367f68ad53e4efb32e7b5"
+    },
+    "docs/evidence/api-cleanup.json": {
+      "bytes": 1595,
+      "sha256": "02698f96c5e32d1683225943d261632ebdd08a99af141cd517d534cd370dd27e"
+    },
+    "docs/evidence/api-junit.xml": {
+      "bytes": 9136,
+      "sha256": "ceac53492a58fd9b46b6ac2e9d1b829d2a638d2b69f6e246695b1efe0c85ae63"
+    },
+    "docs/evidence/dependency-licenses.json": {
+      "bytes": 3497,
+      "sha256": "0505d448934493439750cac34cba1045dcdc925d023d8ce53706a3414d411fdb"
+    },
+    "docs/evidence/historical-allure-summary.json": {
+      "bytes": 592,
+      "sha256": "b219dc5957d361fe61d553d102c242ac7bdac3b1b3ae183efdd8053457731e38"
+    },
+    "docs/evidence/historical-jenkins.json": {
+      "bytes": 1113,
+      "sha256": "05dce9c84606c59496899ba570f6d4d43c9169bab90aa1fe9c992ca4c6d99938"
+    },
+    "docs/evidence/historical-performance.json": {
+      "bytes": 6586,
+      "sha256": "207c33af11cb518b59350ced2be3ecd0abc5cbb7c587a07908d5142f241317cb"
+    },
+    "docs/evidence/jmeter-smoke.json": {
+      "bytes": 2018,
+      "sha256": "2cf5e0c86904f17ae7b60608251e841c57ffcd980ec50d635216f69e256f36c3"
+    },
+    "docs/evidence/ui-junit.xml": {
+      "bytes": 849,
+      "sha256": "0cbc91c7cb896676b5ee83ac93f5b3a5410061f7a35ad3f9af84b97c4061ee91"
+    },
+    "docs/evidence/ui-session-cleanup.json": {
+      "bytes": 1811,
+      "sha256": "f25d9827b76abf626313cb6153422c86ecc210d6e198dd168e64b78f6e3e5174"
+    },
+    "docs/evidence/verification-summary.json": {
+      "bytes": 1336,
+      "sha256": "9e8b10368c343e33c7f66fa42724d5098e2e0bced96952df007631a979bcaa07"
+    },
+    "docs/evidence/wrapper-provenance.json": {
+      "bytes": 1133,
+      "sha256": "660ac0a264b7faa452b887b21ff75cb38886d8c3b8c3daa8eaac1eee06fc59b7"
+    },
+    "docs/excluded-source-files.txt": {
+      "bytes": 926,
+      "sha256": "775faa693045fd5df4ae82a4fbb3c389543ea964e60a9c66edf5ac7cb552075a"
+    },
+    "docs/exclusions.md": {
+      "bytes": 1249,
+      "sha256": "c553840687e2e552841c36a328487bfafc430aca2ca5f28b566d2ecc7f4f3892"
+    },
+    "docs/performance-report.md": {
+      "bytes": 4794,
+      "sha256": "70dd5aa17270aec333170bc61cb1b07c9ed9fccb2007ef1a0eb1f27380ade723"
+    },
+    "docs/public-files.txt": {
+      "bytes": 2540,
+      "sha256": "335745de99c546282479cd5367c5d1e7927348964faf99cd2a9d626d82b09e8f"
+    },
+    "docs/release-changes.md": {
+      "bytes": 1800,
+      "sha256": "13c4b0d07ba0174052593720fe91e1d9cc15a38bb9aafd8e017411bc103e3d56"
+    },
+    "docs/reproduction.md": {
+      "bytes": 3444,
+      "sha256": "7e4b0b32d3fcd6f065b5e083e6b9d5e57227779f175adaec77e2cbdac04e6f2a"
+    },
+    "docs/security-audit.md": {
+      "bytes": 2516,
+      "sha256": "a3fed4133b2ecc65c3179ec1722d65a7f47be16f219a85dcd5c3163ddeece989"
+    },
+    "performance/jmeter/README.md": {
+      "bytes": 486,
+      "sha256": "63c946f9da23ef5d7eacc4aa5362447549d2cfd1da6d971c092f2ae047a8b0ed"
+    },
+    "performance/jmeter/analyze.py": {
+      "bytes": 5746,
+      "sha256": "f5334382212bdad79b94df39b21086608f7466012224fbb307e29b2174bac7d5"
+    },
+    "performance/jmeter/health.jmx": {
+      "bytes": 4828,
+      "sha256": "1b23ea53fdffa7daa2da40164595b60b477d293fb959aba0e4fc129a2f166b9b"
+    },
+    "performance/jmeter/payment.jmx": {
+      "bytes": 8766,
+      "sha256": "04317e09eb13fc27e7b19ed7dca3215c5d54ac97eea133b4953e2bc6aac3deeb"
+    },
+    "performance/jmeter/run.py": {
+      "bytes": 20235,
+      "sha256": "e597b584b969454418b029423956570cea051e7618e7d09a05967a5b614e6202"
+    },
+    "performance/jmeter/user-query.jmx": {
+      "bytes": 5803,
+      "sha256": "7a5845328d060ba1da7ec2b707292c7442eb45ac5a4a8161a6c3719723383555"
+    },
+    "pytest.ini": {
+      "bytes": 59,
+      "sha256": "276b9f44d4c57f56f6e8cc340e9d1beb3e9598dbee49b069837d4dee6e7f938b"
+    },
+    "requirements-ui.txt": {
+      "bytes": 288,
+      "sha256": "8957e14097d7c2cb81203ca37489858ab3fd1984fb0e92caf8877c4035699f9b"
+    },
+    "requirements.txt": {
+      "bytes": 548,
+      "sha256": "9f902b587d9f8520045490fb4935322673478ab88d1d45b32bdba835a3e46e8c"
+    },
+    "scripts/ci_runner.py": {
+      "bytes": 10526,
+      "sha256": "fdc6d92b151514b15366001db28cbffa332e8588f04f97545940a271ca929b87"
+    },
+    "scripts/start_jenkins.sh": {
+      "bytes": 602,
+      "sha256": "852420a66cbd148397d7f7f5ea1a87fb95c382f5d741f0156dbac69cc02ef800"
+    },
+    "service/__init__.py": {
+      "bytes": 64,
+      "sha256": "6edaf008467d8cad2f12671e1686140a444b04eb947ec29f0d90127b06303dc8"
+    },
+    "service/database.py": {
+      "bytes": 3106,
+      "sha256": "28df249b70f48cb1fe9d0668f71acf6f03ab00c5bc328e5a675de1e5f26229d1"
+    },
+    "service/main.py": {
+      "bytes": 8985,
+      "sha256": "32e9f26b36dda09b816faa55152a0bebcc64baeebf18168523a1d79e60478adb"
+    },
+    "service/migrate_database.py": {
+      "bytes": 2432,
+      "sha256": "1b839dd7be27a916bb2f6cd9e5013948ae8ce758d55ee270b012d518dda39933"
+    },
+    "tests/api/allure_failure_demo.py": {
+      "bytes": 1027,
+      "sha256": "3217266f92c698246e43cdf29cfdbe1b074cd2ae02d7de02735998f0db6706ea"
+    },
+    "tests/api/conftest.py": {
+      "bytes": 5602,
+      "sha256": "1b9c5792f75408a1be2eb371225e57aaefaa4d2fc5fcb93fa887f54804cdcbfb"
+    },
+    "tests/api/test_cards.py": {
+      "bytes": 7533,
+      "sha256": "e18cb767c24b6f3c027f59a0b525ca1c37ddf67adfce2cd75012db013060768b"
+    },
+    "tests/api/test_health.py": {
+      "bytes": 829,
+      "sha256": "1d938db55c59aa000e5c324f4c3c3d52d7165628cc513aa3a199d0bf2fd103a7"
+    },
+    "tests/api/test_payments.py": {
+      "bytes": 13373,
+      "sha256": "0cda7c7f34d0834e27bfd27707a242d02ab128600a2103239df85eebb70e5934"
+    },
+    "tests/api/test_users.py": {
+      "bytes": 3954,
+      "sha256": "af50cba94bbd0cc3088032f5f6d91730840ddec5b1b571891919e609f52f4125"
+    },
+    "tests/api/test_verification.py": {
+      "bytes": 4798,
+      "sha256": "18ee83b3434f5def57bb7544fc4961acd14f5e9dc548ebd65eb1f6012ef21d12"
+    },
+    "tests/storage/test_card_integrity.py": {
+      "bytes": 886,
+      "sha256": "606928014c5cd6a4f685e679b75337b9004ca1754dea56e801ff316874340e0d"
+    },
+    "tests/storage/test_migration.py": {
+      "bytes": 3182,
+      "sha256": "218bbd5013155bfaefdb67a9099fea1944ceec8a2310e61ba07cf5163d521164"
+    },
+    "tests/storage/test_payments_storage.py": {
+      "bytes": 3338,
+      "sha256": "196eaea9486fc201ef2077d4c03fb145ef8193fe95c3d06e5befa1bfe5d97b52"
+    },
+    "tests/ui/__init__.py": {
+      "bytes": 75,
+      "sha256": "13e7f79b488d376900aab84900cc2f784d692c2a9a114d7d082307329452d2ad"
+    },
+    "tests/ui/conftest.py": {
+      "bytes": 4801,
+      "sha256": "89376e23304e9b82434d0728269e33ab3ac4451ed59caa5967f9929628e9f7e2"
+    },
+    "tests/ui/failure_probe.py": {
+      "bytes": 921,
+      "sha256": "40f8278e144ac4cdbae306d8b90ee2355768566ebfc3d2f8394fb7195d8b1104"
+    },
+    "tests/ui/pages/__init__.py": {
+      "bytes": 53,
+      "sha256": "dc0f0705a6fccb929cbbc5e02464d0ad0c3ac228a85135f27575dbcac836c59b"
+    },
+    "tests/ui/pages/home_page.py": {
+      "bytes": 1314,
+      "sha256": "078bf7dd5878e708cc97dfd5fc47002f5a155366de9ad0b41baff4389d123c24"
+    },
+    "tests/ui/pages/payment_page.py": {
+      "bytes": 2616,
+      "sha256": "a74f0bc8a71b1de036859359768bd78f6b4aef2d503427ee2063971b1e4825d8"
+    },
+    "tests/ui/test_isolation.py": {
+      "bytes": 1420,
+      "sha256": "cac98f7e87342ecbbb5ec36ceb4134185b171cac0f6600874bb5028c1c44dc07"
+    },
+    "tests/ui/test_navigation.py": {
+      "bytes": 1479,
+      "sha256": "5f1d4e2b7cc4d4f4cb59d40c7d98c199223820d252402d59e431f880670b8443"
+    },
+    "tests/ui/test_payment_demo.py": {
+      "bytes": 1359,
+      "sha256": "e782200a073047fbf5b1c526dcedb171bce226823c9db4d79fe4ce7e8c6c6cb2"
+    },
+    "tests/ui/test_payment_validation.py": {
+      "bytes": 1141,
+      "sha256": "9bbf797ccc2f965c35257698836835b1c51501693c99fc97e73b892b93554581"
+    }
+  },
+  "phase_a_candidate_manifest_sha256": "1a849af5bd37f0b0abd5a7ca2b6353a3123eaafa52db31546a09e50cd3c6275f",
+  "phase_a_runtime_validation_date": "2026-11-07",
+  "local_release_preparation_date": "2026-11-09",
+  "executable_code_dependencies_build_config_match_phase_a": true,
+  "project_license": "MIT for original project content; third-party rights retained"
+}

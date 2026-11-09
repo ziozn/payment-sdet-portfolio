@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-07",
+  "apk": "Built from this public snapshot using verified Gradle Wrapper",
+  "sessions": [
+    {
+      "test_id": "tests/ui/test_isolation.py::test_session_starts_clean_and_leaves_payment",
+      "session_id": "6a1fdcfc-c002-4f49-a332-6171f7eb8b4c",
+      "quit_completed": true,
+      "delete_http_200": true,
+      "screenshot_saved": true,
+      "xml_saved": true
+    },
+    {
+      "test_id": "tests/ui/test_payment_validation.py::test_invalid_amount[zero]",
+      "session_id": "03124a32-a021-4094-9469-47912eac2747",
+      "quit_completed": true,
+      "delete_http_200": true,
+      "screenshot_saved": true,
+      "xml_saved": true
+    },
+    {
+      "test_id": "tests/ui/test_navigation.py::test_reenter_payment_page",
+      "session_id": "3a140ced-3987-4848-a9df-619fa0542bc8",
+      "quit_completed": true,
+      "delete_http_200": true,
+      "screenshot_saved": true,
+      "xml_saved": true
+    },
+    {
+      "test_id": "tests/ui/test_payment_validation.py::test_invalid_amount[empty]",
+      "session_id": "d485f589-d8bc-4371-9a9c-4312c935d5f9",
+      "quit_completed": true,
+      "delete_http_200": true,
+      "screenshot_saved": true,
+      "xml_saved": true
+    },
+    {
+      "test_id": "tests/ui/test_payment_demo.py::test_payment_ui_demo",
+      "session_id": "05cad7b0-dd0b-4251-9a63-d47618d2dec3",
+      "quit_completed": true,
+      "delete_http_200": true,
+      "screenshot_saved": true,
+      "xml_saved": true
+    },
+    {
+      "test_id": "tests/ui/test_payment_validation.py::test_invalid_amount[three-decimals]",
+      "session_id": "cf28e7fa-8b9e-482a-af63-9c3c6d11b0e1",
+      "quit_completed": true,
+      "delete_http_200": true,
+      "screenshot_saved": true,
+      "xml_saved": true
+    }
+  ],
+  "appium_stopped": true,
+  "appium_exit_code": 0
+}

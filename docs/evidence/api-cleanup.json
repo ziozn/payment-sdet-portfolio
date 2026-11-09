@@ -1,0 +1,66 @@
+{
+  "execution_date": "2026-11-07",
+  "databases": [
+    {
+      "database_evidence": "service-2c4eca4782864eaebf9ce1be6a74d304",
+      "counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      },
+      "foreign_key_check": [],
+      "service_exit_code": "0"
+    },
+    {
+      "database_evidence": "service-38554e18232749cd844ad656aa49ad9e",
+      "counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      },
+      "foreign_key_check": [],
+      "service_exit_code": "0"
+    },
+    {
+      "database_evidence": "service-44b9d20ddd474d22a0f4529654476593",
+      "counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      },
+      "foreign_key_check": [],
+      "service_exit_code": "0"
+    },
+    {
+      "database_evidence": "service-9b012f40c40943ea8dfd615d42c0afb0",
+      "counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      },
+      "foreign_key_check": [],
+      "service_exit_code": "0"
+    },
+    {
+      "database_evidence": "service-c1a2ecbca7f24d4ba08de566f58e58e9",
+      "counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      },
+      "foreign_key_check": [],
+      "service_exit_code": "0"
+    },
+    {
+      "database_evidence": "service-ef124f045a2b4069a0af247d2653f85e",
+      "counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      },
+      "foreign_key_check": [],
+      "service_exit_code": "0"
+    }
+  ],
+  "note": "Only successfully started and exited authorized services are included; failed sandbox attempts retained privately."
+}

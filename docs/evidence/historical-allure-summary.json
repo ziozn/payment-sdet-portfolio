@@ -1,0 +1,25 @@
+{
+  "execution_date": "2026-10-31",
+  "source": "local-regression-01/html-report/widgets/summary.json",
+  "source_sha256": "f3448a190394362ecb1bc7f385037481bd4f15a3b8f8870373bcdcb656a0d074",
+  "summary": {
+    "reportName": "Allure Report",
+    "testRuns": [],
+    "statistic": {
+      "failed": 0,
+      "broken": 0,
+      "skipped": 0,
+      "passed": 88,
+      "unknown": 0,
+      "total": 88
+    },
+    "time": {
+      "start": 1793416603202,
+      "stop": 1793416715685,
+      "duration": 112483,
+      "minDuration": 1,
+      "maxDuration": 13531,
+      "sumDuration": 57012
+    }
+  }
+}

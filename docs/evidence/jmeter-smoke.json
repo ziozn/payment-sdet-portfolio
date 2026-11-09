@@ -1,0 +1,93 @@
+[
+  {
+    "name": "public-smoke-authorized-01",
+    "execution_date": "2026-11-07",
+    "total": {
+      "count": 3,
+      "passed": 3,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 0.353,
+      "rps": 8.498583569405099,
+      "elapsed_ms": {
+        "min": 1,
+        "max": 18,
+        "mean": 6.666666666666667,
+        "p90": 18,
+        "p95": 18,
+        "p99": 18
+      },
+      "response_code_counts": {
+        "200": 3
+      },
+      "expected_409_count": 0
+    },
+    "cleanup": {
+      "owned_spaces_after_delete": {},
+      "guard_preserved": true,
+      "foreign_key_check": [],
+      "final_counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      }
+    },
+    "consistency": {
+      "database_unchanged": true,
+      "foreign_key_check": [],
+      "cross_space_GET": "not applicable"
+    }
+  },
+  {
+    "name": "public-payment-replay-01",
+    "execution_date": "2026-11-07",
+    "total": {
+      "count": 3,
+      "passed": 3,
+      "failed": 0,
+      "error_rate_percent": 0.0,
+      "elapsed_wall_seconds": 0.086,
+      "rps": 34.88372093023256,
+      "elapsed_ms": {
+        "min": 1,
+        "max": 19,
+        "mean": 7.333333333333333,
+        "p90": 19,
+        "p95": 19,
+        "p99": 19
+      },
+      "response_code_counts": {
+        "201": 3
+      },
+      "expected_409_count": 0
+    },
+    "cleanup": {
+      "owned_spaces_after_delete": {
+        "DEMO_PERF_7143441f910e4e28": {
+          "users": 0,
+          "cards": 0,
+          "payments": 0
+        },
+        "DEMO_PERF_45ba1a0b9cb74f0f": {
+          "users": 0,
+          "cards": 0,
+          "payments": 0
+        }
+      },
+      "guard_preserved": true,
+      "foreign_key_check": [],
+      "final_counts": {
+        "users": 0,
+        "cards": 0,
+        "payments": 0
+      }
+    },
+    "consistency": {
+      "primary_expected": 1,
+      "primary_actual": 1,
+      "cross_space_GET": 404,
+      "cross_space_POST": 404,
+      "foreign_key_check": []
+    }
+  }
+]

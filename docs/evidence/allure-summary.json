@@ -1,0 +1,29 @@
+{
+  "execution_date": "2026-11-07",
+  "sources": {
+    "api": "artifacts/ci/public-validation-01/api/allure-results",
+    "ui": "artifacts/ci/public-built-apk-01/ui/allure-results"
+  },
+  "generated_with": "Allure CLI 2.46.1",
+  "summary": {
+    "reportName": "Allure Report",
+    "testRuns": [],
+    "statistic": {
+      "failed": 0,
+      "broken": 0,
+      "skipped": 0,
+      "passed": 88,
+      "unknown": 0,
+      "total": 88
+    },
+    "time": {
+      "start": 1794050862533,
+      "stop": 1794061749697,
+      "duration": 10887164,
+      "minDuration": 1,
+      "maxDuration": 11020,
+      "sumDuration": 49462
+    }
+  },
+  "source_widget_sha256": "85f737a467eed6cc50379d5bf8a88515529793850f617d141e25caf71fa54c5a"
+}

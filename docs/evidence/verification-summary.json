@@ -1,0 +1,45 @@
+{
+  "execution_date": "2026-11-07",
+  "platform": "macOS 26.6.2 arm64",
+  "python": "3.14.3",
+  "fresh_venv_install": "PASS",
+  "pip_check": "PASS",
+  "api_storage": {
+    "total": 82,
+    "passed": 82,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "api_cleanup": "PASS; six successful service databases checked",
+  "gradle_wrapper": "PASS; official JAR checksum and distribution SHA256 enforced",
+  "android_build": "PASS; 35 executed tasks",
+  "new_apk_install": "PASS",
+  "ui_new_apk": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "ui_cleanup": "PASS; six quits and DELETE 200; owned Appium stopped",
+  "allure": {
+    "failed": 0,
+    "broken": 0,
+    "skipped": 0,
+    "passed": 88,
+    "unknown": 0,
+    "total": 88
+  },
+  "jmeter_health": "PASS; 3 samples",
+  "jmeter_replay": "PASS; 3 requests, 1 primary transaction",
+  "jenkins_runner_prepare_api_ui_report_cleanup": "PASS",
+  "jenkins_groovy_grammar": "PASS",
+  "jenkins_declarative_runtime": "NOT VERIFIED",
+  "new_jenkins_pipeline_build": "NOT VERIFIED",
+  "other_clean_computer": "NOT VERIFIED",
+  "windows_linux_execution": "NOT VERIFIED",
+  "project_license": "Owner has not selected a project license; no root LICENSE added",
+  "git_history": "No .git created or copied",
+  "remote_publish": "Not performed"
+}
