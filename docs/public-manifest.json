@@ -1,8 +1,16 @@
 {
   "scope": "Only these files, plus this manifest, form the independent public release",
   "self_hash_excluded": true,
-  "total_files": 87,
+  "total_files": 92,
   "files": {
+    ".agents/skills/payment-testcase-generator/SKILL.md": {
+      "bytes": 4888,
+      "sha256": "3042703908d0cfe9678d850cfacde0bdccf7654635777170dc9ec5a4ee34ca37"
+    },
+    ".agents/skills/payment-testcase-generator/agents/openai.yaml": {
+      "bytes": 189,
+      "sha256": "f5f1cc2f3426ee16209c0c3b7db66b0d06f1b1b30a190ecbbf8b124033cd6b7b"
+    },
     ".gitignore": {
       "bytes": 372,
       "sha256": "6b6a09bc1258313703a7638f877d1ae9e2553c839e319c0ed603c2905cf80019"
@@ -16,8 +24,8 @@
       "sha256": "ce5a2aedcbaf93d5199167a4838ee9311b9d87408e7dad526b90b7a6101fd573"
     },
     "README.md": {
-      "bytes": 5681,
-      "sha256": "5a6d3f0c0c9aa5be58c91e7a757ad6ccd77e5ba304a35b98856052b7cf1e5b6a"
+      "bytes": 6640,
+      "sha256": "eb9969de0e283cac9989edbea7cfaf5751d2f62210eb01f5ec1ef542212c3222"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 3489,
@@ -98,6 +106,14 @@
     "ci/plugins.txt": {
       "bytes": 114,
       "sha256": "de76d0387c0b01d16cf0ad6798d7a00e707fca943c65a973faa3c09a2ea117b4"
+    },
+    "docs/ai-skill-example.md": {
+      "bytes": 15613,
+      "sha256": "80b2558044ebbe554b24be9649e731f62d7e1f9cfba2322e4f38f3cf1f1aba8d"
+    },
+    "docs/ai-skill-testcase-generation.md": {
+      "bytes": 5875,
+      "sha256": "ebee270557b70848266d39468c7fc3e60604f973e05c2d87f9473bad33721fb2"
     },
     "docs/allure-report.md": {
       "bytes": 1881,
@@ -192,8 +208,8 @@
       "sha256": "70dd5aa17270aec333170bc61cb1b07c9ed9fccb2007ef1a0eb1f27380ade723"
     },
     "docs/public-files.txt": {
-      "bytes": 2540,
-      "sha256": "335745de99c546282479cd5367c5d1e7927348964faf99cd2a9d626d82b09e8f"
+      "bytes": 2742,
+      "sha256": "1df527117585f898c05b9b164e8960c612bc31963b485dc4283be7d80c617c7a"
     },
     "docs/release-changes.md": {
       "bytes": 1800,
@@ -202,6 +218,10 @@
     "docs/reproduction.md": {
       "bytes": 3444,
       "sha256": "7e4b0b32d3fcd6f065b5e083e6b9d5e57227779f175adaec77e2cbdac04e6f2a"
+    },
+    "docs/resume-link-snippet.md": {
+      "bytes": 1627,
+      "sha256": "1ad27eb94022150e989cc64d4624d95603c576018e383c6421eff6f8e63adf60"
     },
     "docs/security-audit.md": {
       "bytes": 2516,
@@ -352,5 +372,13 @@
   "phase_a_runtime_validation_date": "2026-11-07",
   "local_release_preparation_date": "2026-11-09",
   "executable_code_dependencies_build_config_match_phase_a": true,
-  "project_license": "MIT for original project content; third-party rights retained"
+  "project_license": "MIT for original project content; third-party rights retained",
+  "ai_skill_module": {
+    "name": "payment-testcase-generator",
+    "added": "2026-11-10",
+    "type": "instruction-only testcase design",
+    "examples_executed": false,
+    "new_model_api_dependencies": false,
+    "existing_application_tests_reports_and_build_configuration_changed": false
+  }
 }

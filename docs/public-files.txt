@@ -1,3 +1,5 @@
+.agents/skills/payment-testcase-generator/SKILL.md
+.agents/skills/payment-testcase-generator/agents/openai.yaml
 .gitignore
 Jenkinsfile
 LICENSE
@@ -22,6 +24,8 @@ android-app/gradlew.bat
 android-app/settings.gradle.kts
 ci/README.md
 ci/plugins.txt
+docs/ai-skill-example.md
+docs/ai-skill-testcase-generation.md
 docs/allure-report.md
 docs/android.md
 docs/architecture.md
@@ -49,6 +53,7 @@ docs/public-files.txt
 docs/public-manifest.json
 docs/release-changes.md
 docs/reproduction.md
+docs/resume-link-snippet.md
 docs/security-audit.md
 performance/jmeter/README.md
 performance/jmeter/analyze.py

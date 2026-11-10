@@ -4,14 +4,15 @@
 
 **边界：Android 不调用 FastAPI，不创建后台支付交易；全部 DEMO 数据不涉及真实资金。本项目由 Codex 辅助开发，不包含公司内部源码，也不代表本人已独立掌握全部实现。**
 
-## 四个展示入口
+## 五个展示入口
 
 - [代码与 Quick Start](README.md)
 - [Jenkins / CI 配置与历史构建记录](docs/ci-demo.md)
 - [Allure 报告截图与执行来源](docs/allure-report.md)
 - [JMeter 脚本、指标与实验限制](docs/performance-report.md)
+- [AI Skill 支付测试用例生成规则与演示](.agents/skills/payment-testcase-generator/SKILL.md)
 
-四个入口均为仓库内实际文件，公开仓库地址为 [ziozn/payment-sdet-portfolio](https://github.com/ziozn/payment-sdet-portfolio)。报告保留真实执行日期；Jenkins新配置的未验证状态见对应文档。
+五个入口均为仓库内实际文件，公开仓库地址为 [ziozn/payment-sdet-portfolio](https://github.com/ziozn/payment-sdet-portfolio)。报告保留真实执行日期；Jenkins新配置的未验证状态见对应文档。
 
 ## 实现与代码导航
 
@@ -39,6 +40,14 @@ flowchart LR
 ~~~
 
 Android与FastAPI之间没有业务连线。退款、真实通道、Android/API联调、iOS/真机矩阵均未实现，列为未来计划。见[当前契约](docs/current-contract.md)和[架构](docs/architecture.md)。
+
+## AI Skill 辅助支付测试设计
+
+[payment-testcase-generator](.agents/skills/payment-testcase-generator/SKILL.md) 将需求解析、场景设计、支付风险、自动化适配、数据核验和输出质检维护为同一套规则，辅助生成可追溯、待人工审核的支付测试用例草案。
+
+在本仓库的 Codex 会话中调用 $payment-testcase-generator 并提供新需求，即可复用规则；见[模块说明](docs/ai-skill-testcase-generation.md)、[8条虚拟用例示例](docs/ai-skill-example.md)和[简历链接片段](docs/resume-link-snippet.md)。
+
+这是个人作品集的指令型 Skill，不调用支付、不修改数据库、不自动运行测试，不新增模型 API 依赖。示例用例全部未执行，也未接入企业 CI、AI 平台或真实微信支付；原有报告与这些设计草案分别陈述。
 
 ## Quick Start：先运行后端
 
